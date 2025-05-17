@@ -1,0 +1,259 @@
+body{
+    /* background-color: pink; */
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+
+/* Navbar styling */
+
+.navbar{
+    height: 4rem;
+    background-color: white;
+}
+
+.fa-compass-drafting{
+    color: #87ceeb;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+
+
+/* Footer styling */
+
+.footer-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    
+
+    
+}
+
+.footer-info-links, .footer-info-socialMedia, .footer-info-company{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.footer-info-socialMedia i{
+    font-size: 1.2rem;
+
+    margin-right: 1rem;
+}
+
+.footer-info-links a{
+    text-decoration: none;
+    color: #222222;
+    margin-right: 1rem;
+
+
+}
+
+.footer-info-links a:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+
+/* index.ejs styling          card styling */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+    /* margin-right: 2rem; */
+}
+.listing-card:hover{
+    border-radius: 1rem;
+
+
+
+}
+.card img{
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover !important;
+    height: 17rem;
+}
+
+.card-body{
+    padding: 0 !important;
+
+}
+
+.card-body h6, p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+    color:#222222;
+}
+
+/* Card Effect */
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: white;
+}
+
+
+/* New Listing stylig */
+.add-btn{
+    background-color: #87ceeb !important;
+    border: none !important;
+    /* color: black !important; */
+}
+
+
+/* Edit Listing styling */
+.edit-btn{
+     background-color: #87ceeb !important;
+    border: none !important;
+}
+
+
+
+/* show listing styling */
+.view-overlay{
+    opacity:0;
+}
+.view-overlay:hover{
+    opacity:0.2;
+    background-color: white;
+}
+
+.view-img{
+    height:40vh !important;
+}
+.view-img:hover{
+                box-shadow: 6px 6px 6px black;
+
+}
+
+.show-card{
+    margin-right: 2rem;
+}
+
+
+
+.btns{
+    display: flex;
+}
+
+
+
+/* Extra items */
+        .filter{
+            margin-top: 1rem;
+            margin-right: 2rem;
+            text-align: center;
+            opacity: 0.7;
+        }
+        #filters{
+            margin-top:0.5rem;
+            display:flex;
+            padding-left: 2rem;
+            flex-wrap: wrap;
+            
+            border:2px solid rgba(0, 0, 0, 0.07);
+            border-radius: 1.25rem;
+            align-items: center;
+
+        
+        }
+        #filters:hover{
+            box-shadow: 6px 6px 8px black;
+
+        }
+        .filter:hover{
+            opacity:1;
+            cursor: pointer;
+        }
+
+        .tax-info{
+            display: none;
+        }
+        .tax-toggle{
+            border:2px solid rgba(0, 0, 0, 0.07);
+            margin-right: 1rem;
+            padding:1rem;
+            border-radius: 1.25rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display:flex;
+            align-items: center;
+            opacity: 0.7;
+            height:3rem;
+        }
+        .tax-toggle:hover{
+            opacity: 1;
+             box-shadow: 6px 6px 8px black;
+        }   
+        #flexSwitchCheckDefault{
+            cursor: pointer;
+        }
+        
+
+
+        .btn-search{
+            background-color: #87ceeb !important;
+            color: white !important;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 1.25rem !important;
+            
+
+
+        }
+
+        .btn-search i{
+            display:inline;
+            margin-right: 0.5rem;
+            
+        }
+        
+        .search{
+            
+            border-radius: 1.25rem;
+        }
+
+        .search:hover{
+            
+        box-shadow: 6px 6px 8px black;
+
+            
+        }
+        .d-flex{
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+     
+        .search-dest{
+            border-radius: 1.25rem !important;
+            padding-left: 1rem !important;
+
+            padding-right: 2rem !important;
+        }
