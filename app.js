@@ -111,7 +111,7 @@ main()
 .catch((error)=>{
     console.log(error);
 })
-const port = 8080;
+const port = process.env.PORT || 8080;
 // Establishing Connection With Server With The Help Of Port
 app.listen(port , ()=>{
     console.log(`server is listening to port: ${8080}`);
@@ -177,3 +177,6 @@ app.use((err,req,res,next)=>{
 
 
 
+// 100.20.92.101
+// 44.225.181.72
+// 44.227.217.144
