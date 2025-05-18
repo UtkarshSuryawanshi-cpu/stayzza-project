@@ -149,9 +149,7 @@ app.use((req,res,next)=>{
 //     res.send(registeredNewUser);
 // })
 
-app.get("/", (req,res)=>{
-    res.send("API is running successfully")
-})
+
 
 //// Listing routes
 app.use("/listings", listingRouter);
