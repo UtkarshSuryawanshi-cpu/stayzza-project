@@ -1,5 +1,5 @@
 if(process.env.NODE_ENV != "production"){
-    require('dotenv').config()
+    require("dotenv").config()
 }
 // console.log(process.env.CLOUD_NAME);
 
@@ -72,9 +72,9 @@ const store= MongoStore.create({
     },
     touchAfter: 24*60*60
 })
-store.on("error", ()=>{
-    console.log("ERROR IN MONGO SESSION STORE", err);
-})
+// store.on("error", ()=>{
+//     console.log("ERROR IN MONGO SESSION STORE", err);
+// })
 const sessionOptions = {
     store: store,
     secret : process.env.SECRET,
