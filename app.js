@@ -112,9 +112,9 @@ main()
     console.log(error);
 })
 
-
+const port = process.env.PORT || 3000
 // Establishing Connection With Server With The Help Of Port
-app.listen(8080, ()=>{
+app.listen(port ,'0.0.0.0', ()=>{
     console.log("server is listening to port: 8080");
 })
 
