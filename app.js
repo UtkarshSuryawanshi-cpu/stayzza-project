@@ -111,11 +111,10 @@ main()
 .catch((error)=>{
     console.log(error);
 })
-
-const port = process.env.PORT || 3000
+const port = 8080;
 // Establishing Connection With Server With The Help Of Port
-app.listen(port ,'0.0.0.0', ()=>{
-    console.log("server is listening to port: 8080");
+app.listen(port , ()=>{
+    console.log(`server is listening to port: ${8080}`);
 })
 
 
@@ -150,7 +149,9 @@ app.use((req,res,next)=>{
 //     res.send(registeredNewUser);
 // })
 
-
+app.get("/", (req,res)=>{
+    res.send("API is running successfully")
+})
 
 //// Listing routes
 app.use("/listings", listingRouter);

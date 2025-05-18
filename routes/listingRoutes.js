@@ -56,34 +56,34 @@ const upload = multer({ storage });
 
 
 //index route
-router.get("/listings",  wrapAsync(listingController.index));
+router.get("/",  wrapAsync(listingController.index));
 
 
 // new route
-router.get("/listings/new", isLoggedIn, listingController.newListingForm);
+router.get("/new", isLoggedIn, listingController.newListingForm);
 
 
 // show route
-router.get("/listings/:id", wrapAsync(listingController.showListing));
+router.get("/:id", wrapAsync(listingController.showListing));
 
 
 // create route/ post route
-router.post("/listings",  isLoggedIn, upload.single('image'), wrapAsync(listingController.createListing))
+router.post("/",  isLoggedIn, upload.single('image'), wrapAsync(listingController.createListing))
 
 
 
 
 // edit route
-router.get("/listings/:id/edit", isLoggedIn, isOwner , wrapAsync(listingController.editListingForm));
+router.get("/:id/edit", isLoggedIn, isOwner , wrapAsync(listingController.editListingForm));
 
 
 // update route
-router.put("/listings/:id", isOwner, upload.single('image'), wrapAsync(listingController.updateListing))
+router.put("/:id", isOwner, upload.single('image'), wrapAsync(listingController.updateListing))
 
 
 
 // delete route
-router.delete("/listings/:id/delete",isOwner,isLoggedIn, wrapAsync(listingController.destroyListing));
+router.delete("/:id/delete",isOwner,isLoggedIn, wrapAsync(listingController.destroyListing));
 
 
 
