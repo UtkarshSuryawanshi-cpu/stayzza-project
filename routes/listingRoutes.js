@@ -56,7 +56,10 @@ const upload = multer({ storage });
 
 
 //index route
-router.get("/",  wrapAsync(listingController.index));
+// router.get("/",  wrapAsync(listingController.index));
+router.get("/", (req,res)=>{
+    res.send("hejfke")
+});
 
 
 // new route
