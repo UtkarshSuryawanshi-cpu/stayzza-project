@@ -23,17 +23,7 @@ const { storage } = require("../cloudConfig.js")
 const upload = multer({ storage });
 
 
-//// Validate listingSchema
-// const validateListing= (req,res,next)=>{
-//   let {error} =listingSchema.validate(req.body);
-//     // console.log(result);
-//     if(error){
-//         next( new myError(400,error));
-//     }
-//     else{
-//         next();
-//     }
-// }
+
 
 // // Root Route
 // router.get("/", (req,res)=>{
@@ -56,10 +46,7 @@ const upload = multer({ storage });
 
 
 //index route
-// router.get("/",  wrapAsync(listingController.index));
-router.get("/", (req,res)=>{
-    res.send("hejfke")
-});
+router.get("/",  wrapAsync(listingController.index));
 
 
 // new route
